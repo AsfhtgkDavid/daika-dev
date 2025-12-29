@@ -11,13 +11,13 @@ import { useIsMobile } from "@/hooks/useIsMobile.ts";
 const Links = () => {
 	return (
 		<div className="flex flex-col items-center justify-center">
-			<div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-8 p-4 md:p-8 w-133">
+			<div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-8 p-4 md:p-8">
 				<LinkCard
 					title="GitHub"
 					description="My GitHub profile: projects, open-source contributions, and repositories."
 					href="https://github.com/AsfhtgkDavid"
 					icon={GitHubIcon}
-					className="md:col-span-full"
+					className="md:col-span-full md:w-116"
 					fullWidth={!useIsMobile()}
 				/>
 				<LinkCard
@@ -45,7 +45,7 @@ const Links = () => {
 			<div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-8 p-4 md:p-8">
 				<LinkCard
 					title="Mail"
-					description="Send me an email for feedback, questions, or collaboration."
+					description="Email me for feedback, questions, or collaboration."
 					href={"mailto:" + "david" + "@" + "daika" + "." + "dev"}
 					icon={MailIcon}
 					rotateAngle={360}
