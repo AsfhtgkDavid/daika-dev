@@ -1,13 +1,20 @@
 import Card from "@/components/ui/Card.tsx";
 import useTypewriter from "@/hooks/useTypewriter.ts";
+import { cn } from "@/lib/utils.ts";
 import styles from "@/styles/Typewriter.module.css";
-import {cn} from "@/lib/utils.ts";
 
 const About = () => {
 	const [text, done] = useTypewriter("About Me");
 	return (
 		<section id="about" className="flex flex-col items-center py-10">
-			<h1 className={cn(done ? "" : styles.typing, "text-4xl md:text-6xl font-bold mb-8 text-gray-100 relative inline-block")}>{text}</h1>
+			<h1
+				className={cn(
+					done ? "" : styles.typing,
+					"text-4xl md:text-6xl font-bold mb-8 text-gray-100 relative inline-block",
+				)}
+			>
+				{text}
+			</h1>
 			<div className="grid grid-cols-1 md:grid-cols-2 gap-6 w-80 md:w-166">
 				<Card
 					title="Background & Goals"
@@ -33,20 +40,21 @@ const About = () => {
 					className="w-auto h-fit"
 					fullWidth
 				/>
-                <Card
-                    title="Security Research"
-                    description="Conducted a self-audit and was assigned a CVE ID (CVE-2025-69257) for a vulnerability discovered in my own software."
-                    className="w-auto h-fit not-hover:border-red-700 not-hover:border-2 rounded-xl"
-                    fullWidth
-                    />
-                <div className="md:col-span-2 w-full flex justify-center">
-                <Card
-                    title="Open Source"
-                    description="Active contributor. I maintain a package in the Arch User Repository (AUR)."
-                    className="w-80 h-fit"
-                    fullWidth
-                />
-                </div>
+				<Card
+					title="Security Research"
+					description="Conducted a self-audit and was assigned a CVE ID (CVE-2025-69257) for a vulnerability discovered in my own software."
+					className="w-auto h-fit rounded-xl"
+					borderColor="border-red-700"
+					fullWidth
+				/>
+				<div className="md:col-span-2 w-full flex justify-center">
+					<Card
+						title="Open Source"
+						description="Active contributor. I maintain a package in the Arch User Repository (AUR)."
+						className="w-80 h-fit"
+						fullWidth
+					/>
+				</div>
 			</div>
 		</section>
 	);

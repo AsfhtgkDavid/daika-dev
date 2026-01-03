@@ -37,8 +37,11 @@ const Card = (props: CardProps) => {
 			<Tilt tiltReverse>
 				<div
 					className={cn(
-						"bg-gray-800 border-2 border-gray-700 hover:border-gray-500 rounded-xl flex flex-col items-center justify-between hover:scale-[1.05]",
+						"bg-gray-800 border-2 rounded-xl flex flex-col items-center justify-between hover:scale-[1.05]",
 						props.fullWidth ? "w-full h-auto" : "w-54 h-80",
+						props.borderColor
+							? props.borderColor
+							: "border-gray-700 hover:border-gray-500 ",
 					)}
 				>
 					<h2
@@ -82,4 +85,6 @@ interface CardProps {
 
 	className?: string;
 	fullWidth?: boolean;
+
+	borderColor?: string;
 }
