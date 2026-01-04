@@ -6,11 +6,15 @@ export const useFlipClick = (
 	action?: string | (() => void),
 ): [
 	Direction,
-	(e: React.MouseEvent<HTMLAnchorElement, MouseEvent>) => void,
+	(
+		e: React.MouseEvent<HTMLAnchorElement | HTMLButtonElement, MouseEvent>,
+	) => void,
 ] => {
 	const [clickDirection, setClickDirection] = useState<Direction>("0");
 
-	const handleClick = (e: React.MouseEvent<HTMLAnchorElement, MouseEvent>) => {
+	const handleClick = (
+		e: React.MouseEvent<HTMLAnchorElement | HTMLButtonElement, MouseEvent>,
+	) => {
 		e.preventDefault();
 
 		if (clickDirection !== "0" || !action) return;

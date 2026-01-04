@@ -24,11 +24,11 @@ const Card = (props: CardProps) => {
 	);
 
 	const isLink = !!props.href;
+	const Tag = isLink ? "a" : "button";
 	return (
-		<a
+		<Tag
 			onClick={handleClick}
 			href={props.href}
-			role={isLink ? undefined : "button"}
 			className={cn("inline-block cursor-pointer", props.className)}
 			style={{
 				...FLIP_STYLES[clickDirection],
@@ -69,7 +69,7 @@ const Card = (props: CardProps) => {
 					</p>
 				</div>
 			</Tilt>
-		</a>
+		</Tag>
 	);
 };
 
