@@ -1,4 +1,1 @@
-User-agent: *
-Allow: /
-
 Sitemap: https://daika.dev/sitemap.xml
