@@ -24,7 +24,7 @@ const NavigationBar = () => {
 				</NavigationMenuItem>
 				<NavigationMenuItem>
 					<NavigationMenuLink asChild>
-						<NavLink href="about">About</NavLink>
+						<NavLink href="/about">About</NavLink>
 					</NavigationMenuLink>
 				</NavigationMenuItem>
 			</NavigationMenuList>
