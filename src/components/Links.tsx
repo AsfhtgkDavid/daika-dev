@@ -2,11 +2,10 @@ import DiscordIcon from "@/assets/discord-icon.svg";
 import GitHubIcon from "@/assets/github-mark-white.svg";
 import MailIcon from "@/assets/mail-icon.svg";
 import PyPIIcon from "@/assets/pypi-logo.svg";
-import CargoIcon from "/src/assets/cargo.png";
+import CargoIcon from "@/assets/cargo.png";
 import ArchIcon from "@/assets/arch-logo.svg";
 import CopyCard from "@/components/CopyCard.tsx";
 import LinkCard from "@/components/LinkCard.tsx";
-import { useIsMobile } from "@/hooks/useIsMobile.ts";
 
 const Links = () => {
 	return (
@@ -18,7 +17,7 @@ const Links = () => {
 					href="https://github.com/AsfhtgkDavid"
 					icon={GitHubIcon}
 					className="md:col-span-full md:w-116"
-					fullWidth={!useIsMobile()}
+					fullWidth
 				/>
 				<LinkCard
 					title="PyPI"

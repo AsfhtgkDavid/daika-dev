@@ -1,15 +1,17 @@
+"use client";
+
 import type React from "react";
-import { useRef, useEffect } from "react";
-import { StringLine } from "@/lib/StringLine.ts";
+import { useEffect, useRef } from "react";
+import { StringLine } from "@/lib/StringLine";
 import {
 	grabRadius,
 	releaseRadius,
 	slantAmount,
 	stringSpacing,
-} from "@/constants/interactiveStrings.ts";
-import { distToSegment } from "@/lib/utils.ts";
+} from "@/constants/interactiveStrings";
+import { distToSegment } from "@/lib/utils";
 
-const InteractiveStrings: React.FC = () => {
+const InteractiveStrings = () => {
 	const canvasRef = useRef<HTMLCanvasElement>(null);
 
 	const state = useRef({
