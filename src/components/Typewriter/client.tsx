@@ -2,14 +2,12 @@
 
 import { cn } from "@/lib/utils";
 import styles from "@/styles/Typewriter.module.css";
-import {useEffect, useState} from "react";
 import useTypewriter from "@/hooks/useTypewriter";
+import {useIsClient} from "@/hooks/useIsClient";
 
 const TypewriterClient = (props: TypewriterClientProps) => {
 	const [text, done] = useTypewriter(props.text);
-	const [isMounted, setIsMounted] = useState(false);
-
-	useEffect(() => {setIsMounted(true)}, [])
+	const isMounted = useIsClient();
 
 	return (
 		<span
