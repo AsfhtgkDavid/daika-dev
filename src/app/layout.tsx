@@ -28,6 +28,11 @@ export default function RootLayout({
 	return (
 		<html lang="en">
 			<body className="flex flex-col p-2 min-h-screen bg-gray-700">
+			<noscript>
+				<style>{`
+					.typewriter-fallback { opacity: 1 !important; }
+				`}</style>
+			</noscript>
 				<InteractiveStrings />
 				<NavigationBar />
 				{children}
