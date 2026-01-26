@@ -1,8 +1,8 @@
 "use client";
 
 import React from "react";
-import Card from "@/components/ui/Card.tsx";
-import { cn } from "@/lib/utils.ts";
+import Card from "@/components/ui/Card";
+import { cn } from "@/lib/utils";
 
 const CopyCard = (props: CopyCardProps) => {
 	const [showTooltip, setShowTooltip] = React.useState(false);

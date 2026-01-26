@@ -3,7 +3,7 @@ import {
 	friction,
 	lineWidth,
 	tension,
-} from "@/constants/interactiveStrings.ts";
+} from "@/constants/interactiveStrings";
 
 export class StringLine {
 	startX: number;

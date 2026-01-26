@@ -4,8 +4,8 @@ import MailIcon from "@/assets/mail-icon.svg";
 import PyPIIcon from "@/assets/pypi-logo.svg";
 import CargoIcon from "@/assets/cargo.png";
 import ArchIcon from "@/assets/arch-logo.svg";
-import CopyCard from "@/components/CopyCard.tsx";
-import LinkCard from "@/components/LinkCard.tsx";
+import CopyCard from "@/components/CopyCard";
+import LinkCard from "@/components/LinkCard";
 
 const Links = () => {
 	return (

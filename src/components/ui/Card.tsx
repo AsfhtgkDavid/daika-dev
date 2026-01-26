@@ -5,7 +5,7 @@ import Tilt from "react-parallax-tilt";
 import { ANIMATION_DURATION, type Direction } from "@/constants/flipClick";
 import { useFlipClick } from "@/hooks/useFlipClick";
 import { cn } from "@/lib/utils";
-import Image from "next/image";
+import Image, {StaticImageData} from "next/image";
 
 const Card = (props: CardProps) => {
 	const FLIP_STYLES: Record<Direction, CSSProperties> = {
@@ -81,7 +81,7 @@ export default Card;
 interface CardProps {
 	title: string;
 	description: string;
-	icon?: string;
+	icon?: string | StaticImageData;
 	href?: string;
 	onClick?: () => void;
 	rotateAngle?: number;
