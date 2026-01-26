@@ -8,6 +8,7 @@ import {
 	NavigationMenuList,
 } from "@/components/ui/navigation-menu";
 import { useIsMobile } from "@/hooks/useIsMobile";
+import NavLink from "@/components/NavLink";
 
 const NavigationBar = () => {
 	return (
@@ -18,12 +19,12 @@ const NavigationBar = () => {
 			<NavigationMenuList className="flex-wrap gap-4">
 				<NavigationMenuItem>
 					<NavigationMenuLink asChild>
-						<Link href="/">Home</Link>
+						<NavLink href="/">Home</NavLink>
 					</NavigationMenuLink>
 				</NavigationMenuItem>
 				<NavigationMenuItem>
 					<NavigationMenuLink asChild>
-						<Link href="about">About</Link>
+						<NavLink href="about">About</NavLink>
 					</NavigationMenuLink>
 				</NavigationMenuItem>
 			</NavigationMenuList>
