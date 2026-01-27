@@ -40,8 +40,8 @@ const Card = (props: CardProps) => {
 			<Tilt tiltReverse>
 				<div
 					className={cn(
-						"bg-gray-800 border-2 rounded-xl flex flex-col items-center justify-between hover:scale-[1.05] w-54 h-80",
-						props.fullWidth ? "md:w-full md:h-auto" : "",
+						"bg-gray-800 border-2 rounded-xl flex flex-col items-center justify-between hover:scale-[1.05]",
+						props.fullWidth ? "md:w-full md:h-auto" : "w-54 h-80",
 						props.borderColor
 							? props.borderColor
 							: "border-gray-700 hover:border-gray-500 ",
@@ -49,8 +49,8 @@ const Card = (props: CardProps) => {
 				>
 					<h2
 						className={cn(
-							"font-bold m-4 text-gray-100 text-center text-xl",
-							props.fullWidth ? "md:text-3xl" : "",
+							"font-bold m-4 text-gray-100 text-center",
+							props.fullWidth ? "text-3xl" : "text-xl",
 						)}
 					>
 						{props.title}
@@ -58,14 +58,14 @@ const Card = (props: CardProps) => {
 					{props.icon && (
 						<Image
 							src={props.icon}
-							className={cn("m-4 size-28", props.fullWidth ? "md:size-44" : "size-28")}
+							className={cn("m-4", props.fullWidth ? "size-44" : "size-28")}
 							alt={`${props.title} icon`}
 						/>
 					)}
 					<p
 						className={cn(
 							"text-gray-300 m-4 text-justify [text-align-last:center]",
-							props.fullWidth ? "md:text-xl" : "",
+							props.fullWidth ? "text-xl" : "",
 						)}
 					>
 						{props.description}
