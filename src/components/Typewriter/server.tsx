@@ -1,4 +1,3 @@
-import React from "react";
 import TypewriterClient from "./client";
 
 export const TypewriterServer = (props: TypewriterServerProps) => {
