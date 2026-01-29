@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
+import Footer from "@/components/Footer";
 import InteractiveStrings from "@/components/InteractiveStrings";
 import NavigationBar from "@/components/NavigationBar";
-import Footer from "@/components/Footer";
 import "./globals.css";
 import Logo from "@/assets/logo.svg";
 
@@ -27,12 +27,6 @@ export const metadata: Metadata = {
 		url: "https://daika.dev",
 		title: "David Lishchyshen",
 		description: "Personal portfolio of David Lishchyshen",
-		images: [
-			{
-				url: Logo.src,
-				alt: "David Lishchyshen logo",
-			},
-		],
 	},
 	twitter: {
 		card: "summary_large_image",
