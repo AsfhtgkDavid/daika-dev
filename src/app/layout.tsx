@@ -6,23 +6,37 @@ import "./globals.css";
 import Logo from "@/assets/logo.svg"
 
 export const metadata: Metadata = {
-	metadataBase: "https://daika.dev",
+	metadataBase: new URL("https://daika.dev"),
 	title: {
 		default: "David Lishchyshen",
-		template: "David | %s"
+		template: "%s | David Lishchyshen"
 	},
-	description: "David Lishchyshen portfolio",
+	description: "David Lishchyshen portfolio - Full Stack Developer",
+	keywords: ["Python", "Rust", "Security Developer", "Web Developer", "David Lishchyshen"],
+	authors: [{name: "David Lishchyshen", url: "https://daika.dev"}],
+	creator: "David Lishchyshen",
 	openGraph: {
 		type: "website",
 		locale: "en_US",
 		url: "https://daika.dev",
 		title: "David Lishchyshen",
+		description: "Personal portfolio of David Lishchyshen",
 		images: [
 			{
-				url: Logo.u
+				url: Logo.src,
+				alt: "David Lishchyshen logo",
 			}
 		]
 	},
+	twitter: {
+		card: "summary_large_image",
+		title: "David Lishchyshen",
+		description: "Personal portfolio of David Lishchyshen",
+		images: [Logo.src]
+	},
+	alternates: {
+		canonical: "/"
+	}
 };
 
 export default function RootLayout({
