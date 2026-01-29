@@ -5,7 +5,7 @@ import Typewriter from "@/components/Typewriter";
 const Home = () => {
 	return (
 		<div className="flex items-center justify-center flex-col py-10">
-			<Logo />
+			<Logo className="mb-24" />
 			<Typewriter headingText="Hi there, I'm David!" />
 			<Links />
 		</div>

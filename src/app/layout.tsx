@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { Inter } from "next/font/google";
 import Footer from "@/components/Footer";
 import InteractiveStrings from "@/components/InteractiveStrings";
 import NavigationBar from "@/components/NavigationBar";
@@ -38,6 +39,11 @@ export const metadata: Metadata = {
 		canonical: "/",
 	},
 };
+const inter = Inter({
+	subsets: ["latin"],
+	variable: "--font-inter",
+	display: "swap",
+});
 
 export default function RootLayout({
 	children,
@@ -45,7 +51,7 @@ export default function RootLayout({
 	children: React.ReactNode;
 }>) {
 	return (
-		<html lang="en">
+		<html lang="en" className={`${inter.variable}`}>
 			<body className="flex flex-col p-2 min-h-screen bg-gray-700">
 				<noscript>
 					<style>{`
