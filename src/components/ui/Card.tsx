@@ -1,8 +1,11 @@
-import type { CSSProperties } from "react";
+"use client";
+
+import type {CSSProperties} from "react";
 import Tilt from "react-parallax-tilt";
-import { ANIMATION_DURATION, type Direction } from "@/constants/flipClick.ts";
-import { useFlipClick } from "@/hooks/useFlipClick.ts";
-import { cn } from "@/lib/utils.ts";
+import {ANIMATION_DURATION, type Direction} from "@/constants/flipClick";
+import {useFlipClick} from "@/hooks/useFlipClick";
+import {cn} from "@/lib/utils";
+import Image, {StaticImageData} from "next/image";
 
 const Card = (props: CardProps) => {
 	const FLIP_STYLES: Record<Direction, CSSProperties> = {
@@ -53,7 +56,7 @@ const Card = (props: CardProps) => {
 						{props.title}
 					</h2>
 					{props.icon && (
-						<img
+						<Image
 							src={props.icon}
 							className={cn("m-4", props.fullWidth ? "size-44" : "size-28")}
 							alt={`${props.title} icon`}
@@ -78,7 +81,7 @@ export default Card;
 interface CardProps {
 	title: string;
 	description: string;
-	icon?: string;
+	icon?: string | StaticImageData;
 	href?: string;
 	onClick?: () => void;
 	rotateAngle?: number;

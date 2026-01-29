@@ -1,11 +1,13 @@
-import { NavLink } from "react-router";
+"use client";
+
 import {
 	NavigationMenu,
 	NavigationMenuItem,
 	NavigationMenuLink,
 	NavigationMenuList,
-} from "@/components/ui/navigation-menu.tsx";
-import { useIsMobile } from "@/hooks/useIsMobile.ts";
+} from "@/components/ui/navigation-menu";
+import {useIsMobile} from "@/hooks/useIsMobile";
+import NavLink from "@/components/NavLink";
 
 const NavigationBar = () => {
 	return (
@@ -16,12 +18,12 @@ const NavigationBar = () => {
 			<NavigationMenuList className="flex-wrap gap-4">
 				<NavigationMenuItem>
 					<NavigationMenuLink asChild>
-						<NavLink to="/">Home</NavLink>
+						<NavLink href="/">Home</NavLink>
 					</NavigationMenuLink>
 				</NavigationMenuItem>
 				<NavigationMenuItem>
 					<NavigationMenuLink asChild>
-						<NavLink to="about">About</NavLink>
+						<NavLink href="/about">About</NavLink>
 					</NavigationMenuLink>
 				</NavigationMenuItem>
 			</NavigationMenuList>

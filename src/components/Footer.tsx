@@ -1,4 +1,5 @@
 import GitHubLogo from "@/assets/github-mark-white.svg";
+import Image from "next/image";
 
 const Footer = () => {
 	const startYear = 2025;
@@ -29,7 +30,13 @@ const Footer = () => {
 				.
 			</div>
 			<a href="https://github.com/AsfhtgkDavid/daika-dev/" className="shrink-0">
-				<img src={GitHubLogo} alt="GitHub logo" className="size-6" />
+				<Image
+					src={GitHubLogo}
+					alt="GitHub logo"
+					width={24}
+					height={24}
+					className="size-6"
+				/>
 			</a>
 		</footer>
 	);

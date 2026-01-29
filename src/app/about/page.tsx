@@ -1,20 +1,10 @@
-import Card from "@/components/ui/Card.tsx";
-import useTypewriter from "@/hooks/useTypewriter.ts";
-import { cn } from "@/lib/utils.ts";
-import styles from "@/styles/Typewriter.module.css";
+import Typewriter from "@/components/Typewriter";
+import Card from "@/components/ui/Card";
 
 const About = () => {
-	const [text, done] = useTypewriter("About Me");
 	return (
 		<section id="about" className="flex flex-col items-center py-10">
-			<h1
-				className={cn(
-					done ? "" : styles.typing,
-					"text-4xl md:text-6xl font-bold mb-8 text-gray-100 relative inline-block",
-				)}
-			>
-				{text}
-			</h1>
+			<Typewriter headingText="About Me" />
 			<div className="grid grid-cols-1 md:grid-cols-2 gap-6 w-80 md:w-166">
 				<Card
 					title="Background & Goals"
