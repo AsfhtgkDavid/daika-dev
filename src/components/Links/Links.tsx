@@ -13,13 +13,14 @@ export const Links = () => {
 		<div className="flex flex-col items-center justify-center">
 			<div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-8 p-4 md:p-8">
 				<div className={styles.full}>
-				<LinkCard
-					title="GitHub"
-					description="My GitHub profile: projects, open-source contributions, and repositories."
-					href="https://github.com/AsfhtgkDavid"
-					icon={GitHubIcon}
-					fullWidth
-				/></div>
+					<LinkCard
+						title="GitHub"
+						description="My GitHub profile: projects, open-source contributions, and repositories."
+						href="https://github.com/AsfhtgkDavid"
+						icon={GitHubIcon}
+						fullWidth
+					/>
+				</div>
 				<LinkCard
 					title="PyPI"
 					description="My PyPI profile: published packages, libraries, and tools."

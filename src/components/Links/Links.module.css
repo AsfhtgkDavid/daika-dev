@@ -1,17 +1,17 @@
 @reference "../../app/globals.css";
 
 .full {
-    @apply w-54 min-h-80 md:w-116 md:h-fit md:col-span-full
+	@apply w-54 min-h-80 md:w-116 md:h-fit md:col-span-full;
 }
 
 .full h2 {
-    @apply text-xl md:text-3xl
+	@apply text-xl md:text-3xl;
 }
 
 .full img {
-    @apply size-28 md:size-44
+	@apply size-28 md:size-44;
 }
 
 .full p {
-    @apply text-base md:text-xl
+	@apply text-base md:text-xl;
 }

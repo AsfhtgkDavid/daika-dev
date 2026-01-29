@@ -3,17 +3,23 @@ import InteractiveStrings from "@/components/InteractiveStrings";
 import NavigationBar from "@/components/NavigationBar";
 import Footer from "@/components/Footer";
 import "./globals.css";
-import Logo from "@/assets/logo.svg"
+import Logo from "@/assets/logo.svg";
 
 export const metadata: Metadata = {
 	metadataBase: new URL("https://daika.dev"),
 	title: {
 		default: "David Lishchyshen",
-		template: "%s | David Lishchyshen"
+		template: "%s | David Lishchyshen",
 	},
 	description: "David Lishchyshen portfolio - Full Stack Developer",
-	keywords: ["Python", "Rust", "Security Developer", "Web Developer", "David Lishchyshen"],
-	authors: [{name: "David Lishchyshen", url: "https://daika.dev"}],
+	keywords: [
+		"Python",
+		"Rust",
+		"Security Developer",
+		"Web Developer",
+		"David Lishchyshen",
+	],
+	authors: [{ name: "David Lishchyshen", url: "https://daika.dev" }],
 	creator: "David Lishchyshen",
 	openGraph: {
 		type: "website",
@@ -25,18 +31,18 @@ export const metadata: Metadata = {
 			{
 				url: Logo.src,
 				alt: "David Lishchyshen logo",
-			}
-		]
+			},
+		],
 	},
 	twitter: {
 		card: "summary_large_image",
 		title: "David Lishchyshen",
 		description: "Personal portfolio of David Lishchyshen",
-		images: [Logo.src]
+		images: [Logo.src],
 	},
 	alternates: {
-		canonical: "/"
-	}
+		canonical: "/",
+	},
 };
 
 export default function RootLayout({
@@ -47,11 +53,11 @@ export default function RootLayout({
 	return (
 		<html lang="en">
 			<body className="flex flex-col p-2 min-h-screen bg-gray-700">
-			<noscript>
-				<style>{`
+				<noscript>
+					<style>{`
 					.typewriter-fallback { opacity: 1 !important; }
 				`}</style>
-			</noscript>
+				</noscript>
 				<InteractiveStrings />
 				<NavigationBar />
 				{children}
