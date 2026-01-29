@@ -30,7 +30,13 @@ const Footer = () => {
 				.
 			</div>
 			<a href="https://github.com/AsfhtgkDavid/daika-dev/" className="shrink-0">
-				<Image src={GitHubLogo} alt="GitHub logo" className="size-6" />
+				<Image
+					src={GitHubLogo}
+					alt="GitHub logo"
+					width={24}
+					height={24}
+					className="size-6"
+				/>
 			</a>
 		</footer>
 	);
