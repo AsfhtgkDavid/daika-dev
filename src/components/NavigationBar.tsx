@@ -1,13 +1,12 @@
 "use client";
 
-import Link from "next/link";
 import {
 	NavigationMenu,
 	NavigationMenuItem,
 	NavigationMenuLink,
 	NavigationMenuList,
 } from "@/components/ui/navigation-menu";
-import { useIsMobile } from "@/hooks/useIsMobile";
+import {useIsMobile} from "@/hooks/useIsMobile";
 import NavLink from "@/components/NavLink";
 
 const NavigationBar = () => {

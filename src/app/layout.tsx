@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import type {Metadata} from "next";
 import InteractiveStrings from "@/components/InteractiveStrings";
 import NavigationBar from "@/components/NavigationBar";
 import Footer from "@/components/Footer";

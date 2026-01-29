@@ -1,9 +1,4 @@
-import {
-	color,
-	friction,
-	lineWidth,
-	tension,
-} from "@/constants/interactiveStrings";
+import {color, friction, lineWidth, tension,} from "@/constants/interactiveStrings";
 
 export class StringLine {
 	startX: number;

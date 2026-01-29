@@ -1,5 +1,5 @@
 import Card from "@/components/ui/Card";
-import type { StaticImageData } from "next/image";
+import type {StaticImageData} from "next/image";
 
 const LinkCard = (props: LinkCardProps) => {
 	return <Card {...props} />;

@@ -1,6 +1,6 @@
 import type React from "react";
-import { useState } from "react";
-import { ANIMATION_DURATION, type Direction } from "@/constants/flipClick";
+import {useState} from "react";
+import {ANIMATION_DURATION, type Direction} from "@/constants/flipClick";
 
 export const useFlipClick = (
 	action?: string | (() => void),
