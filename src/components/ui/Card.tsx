@@ -1,11 +1,11 @@
 "use client";
 
-import type {CSSProperties} from "react";
+import type { CSSProperties } from "react";
 import Tilt from "react-parallax-tilt";
-import {ANIMATION_DURATION, type Direction} from "@/constants/flipClick";
-import {useFlipClick} from "@/hooks/useFlipClick";
-import {cn} from "@/lib/utils";
-import Image, {StaticImageData} from "next/image";
+import { ANIMATION_DURATION, type Direction } from "@/constants/flipClick";
+import { useFlipClick } from "@/hooks/useFlipClick";
+import { cn } from "@/lib/utils";
+import Image, { StaticImageData } from "next/image";
 
 const Card = (props: CardProps) => {
 	const FLIP_STYLES: Record<Direction, CSSProperties> = {

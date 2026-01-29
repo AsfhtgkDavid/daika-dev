@@ -1,9 +1,9 @@
 "use client";
 
-import {cn} from "@/lib/utils";
+import { cn } from "@/lib/utils";
 import styles from "@/styles/Typewriter.module.css";
 import useTypewriter from "@/hooks/useTypewriter";
-import {useIsClient} from "@/hooks/useIsClient";
+import { useIsClient } from "@/hooks/useIsClient";
 
 const TypewriterClient = (props: TypewriterClientProps) => {
 	const [text, done] = useTypewriter(props.text);

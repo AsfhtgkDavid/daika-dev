@@ -1,12 +1,12 @@
-import DiscordIcon from "@/assets/discord-icon.svg";
-import GitHubIcon from "@/assets/github-mark-white.svg";
-import MailIcon from "@/assets/mail-icon.svg";
-import PyPIIcon from "@/assets/pypi-logo.svg";
+import ArchIcon from "@/assets/arch-logo.svg?url";
 import CargoIcon from "@/assets/cargo.png";
-import ArchIcon from "@/assets/arch-logo.svg";
-import styles from "./Links.module.css";
+import DiscordIcon from "@/assets/discord-icon.svg?url";
+import GitHubIcon from "@/assets/github-mark-white.svg?url";
+import MailIcon from "@/assets/mail-icon.svg?url";
+import PyPIIcon from "@/assets/pypi-logo.svg?url";
 import CopyCard from "@/components/CopyCard";
 import LinkCard from "@/components/LinkCard";
+import styles from "./Links.module.css";
 
 export const Links = () => {
 	return (

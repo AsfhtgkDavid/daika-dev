@@ -2,7 +2,7 @@
 
 import React from "react";
 import Card from "@/components/ui/Card";
-import {cn} from "@/lib/utils";
+import { cn } from "@/lib/utils";
 
 const CopyCard = (props: CopyCardProps) => {
 	const [showTooltip, setShowTooltip] = React.useState(false);

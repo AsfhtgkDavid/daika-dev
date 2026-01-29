@@ -1,5 +1,5 @@
-import GitHubLogo from "@/assets/github-mark-white.svg";
 import Image from "next/image";
+import GitHubLogo from "@/assets/github-mark-white.svg?url";
 
 const Footer = () => {
 	const startYear = 2025;
