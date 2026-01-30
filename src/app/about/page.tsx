@@ -1,5 +1,10 @@
+import type { Metadata } from "next";
 import Typewriter from "@/components/Typewriter";
 import Card from "@/components/ui/Card";
+
+export const metadata: Metadata = {
+	title: "About",
+};
 
 const About = () => {
 	return (
