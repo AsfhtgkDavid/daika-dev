@@ -8,6 +8,10 @@
 		"start": "next start",
 		"lint": "eslint"
 	},
+	"overrides": {
+		"ajv": "^8.18.0",
+		"minimatch": "^10.2.1"
+	},
 	"dependencies": {
 		"@tabler/icons-react": "^3.36.1",
 		"class-variance-authority": "^0.7.1",
