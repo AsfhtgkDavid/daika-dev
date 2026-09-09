@@ -24,6 +24,10 @@ const nextConfig: NextConfig = {
 
 		return config;
 	},
+	cacheComponents: true,
+	images: {
+		remotePatterns: [new URL("https://cdn.myanimelist.net/images/**")],
+	},
 };
 
 export default nextConfig;

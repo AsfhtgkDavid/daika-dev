@@ -1,7 +1,10 @@
+import { cacheLife } from "next/dist/server/use-cache/cache-life";
 import Image from "next/image";
 import GitHubLogo from "@/assets/github-mark-white.svg?url";
 
-const Footer = () => {
+const Footer = async () => {
+	"use cache";
+	cacheLife("days");
 	const startYear = 2025;
 	const currentYear = new Date().getFullYear();
 	const yearDisplay =

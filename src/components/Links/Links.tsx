@@ -58,6 +58,7 @@ export const Links = () => {
 					textToCopy="daika100"
 				/>
 			</div>
+			<hr className="h-6 w-full border-white" />
 		</div>
 	);
 };

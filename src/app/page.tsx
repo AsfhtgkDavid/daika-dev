@@ -1,4 +1,5 @@
 import Logo from "@/assets/logo.svg";
+import AnimeList from "@/components/AnimeList";
 import Links from "@/components/Links";
 import Typewriter from "@/components/Typewriter";
 
@@ -8,6 +9,7 @@ const Home = () => {
 			<Logo className="mb-24" />
 			<Typewriter headingText="Hi there, I'm David!" />
 			<Links />
+			<AnimeList />
 		</div>
 	);
 };
